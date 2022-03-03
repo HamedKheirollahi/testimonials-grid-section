@@ -1,0 +1,227 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Barlow Semi Condensed";
+    font-style: normal;
+}
+
+body {
+    background: #F2F2F2;
+}
+
+.gridconteiner {
+    width: 1440px;
+    height: 900px;
+    display: grid;
+    grid-template-columns: repeat(4, 255px);
+    grid-template-rows: 282px 266px;
+    justify-content: center;
+    align-content: center;
+    grid-gap: 24px;
+
+}
+
+.Jonathanimg,
+.Kiraimg,
+.Danielimg,
+.Jeanetteimg,
+.Patrickimg {
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    left: 32px;
+    top: 26px;
+    border-radius: 50%;
+}
+
+.Danielp1,
+.Jeanettep1,
+.Jonathanp1,
+.Kirap1,
+.Patrickp1 {
+    position: absolute;
+    left: 77px;
+    top: 26px;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 13px;
+    color: #FFFFFF;
+}
+
+.Danielp2,
+.Jeanettep2,
+.Jonathanp2,
+.Kirap2,
+.Patrickp2 {
+    position: absolute;
+    left: 77px;
+    top: 47px;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 11px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+
+.Danielp3,
+.Jeanettep3,
+.Jonathanp3,
+.Kirap3,
+.Patrickp3 {
+    position: absolute;
+    top: 72px;
+    left: 32px;
+    right: 32px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.Danielp4,
+.Jeanettep4,
+.Jonathanp4,
+.Kirap4,
+.Patrickp4 {
+    position: absolute;
+    left: 32px;
+    bottom: 32px;
+    right: 32px;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 18px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.7;
+}
+
+.Daniel {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    position: relative;
+    background: #733FC8;
+    box-shadow: 40px 60px 50px -47px rgba(72, 85, 106, 0.247378);
+    border-radius: 8px;
+}
+
+.Danielbackgrund {
+    background-image: url("images/bg-pattern-quotation.svg");
+    position: absolute;
+    width: 104px;
+    height: 102px;
+    right: 80px;
+    top: 0px;
+}
+
+.Danielimg {
+    border: 2px solid #A775F1;
+}
+
+.Danielp4 {
+    color: #CFCFCF;
+}
+
+.Jeanette {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    background: #FFFFFF;
+    position: relative;
+    background: #FFFFFF;
+    box-shadow: 40px 60px 50px -47px rgba(72, 85, 106, 0.247378);
+    border-radius: 8px;
+
+}
+
+.Jeanettep1,
+.Jeanettep2,
+.Jeanettep3,
+.Jeanettep4 {
+    color: #48556A;
+}
+
+.Patrick {
+    grid-column: 2/4;
+    grid-row: 2/3;
+    position: relative;
+    background: #19202D;
+    box-shadow: 40px 60px 50px -47px rgba(72, 85, 106, 0.247378);
+    border-radius: 8px;
+}
+
+.Patrickimg {
+    border: 2px solid #733FC8;
+}
+
+.Patrickp3 {
+    color: #ECF2F8;
+}
+
+.Jonathan {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    background: #48556A;
+    position: relative;
+    box-shadow: 40px 60px 50px -47px rgba(72, 85, 106, 0.247378);
+    border-radius: 8px;
+}
+
+.Kira {
+    grid-column: 4/5;
+    grid-row: 1/3;
+    background: #FFFFFF;
+    position: relative;
+    box-shadow: 40px 60px 50px -47px rgba(72, 85, 106, 0.247378);
+    border-radius: 8px;
+}
+
+.Kirap1,
+.Kirap2,
+.Kirap3,
+.Kirap4 {
+    color: #48556A;
+}
+
+
+
+@media screen and (max-width: 375px) {
+    .gridconteiner {
+        width: 375px;
+        height: 1966px;
+        grid-template-columns: 327px;
+        grid-template-rows: 444px 240px 222px 384px 483px;
+    }
+
+    .Daniel,
+    .Jeanette,
+    .Jonathan,
+    .Kira,
+    .Patrick {
+        grid-column: 1/2;
+    }
+
+    .Daniel {
+        grid-row: 1/2;
+    }
+
+    .Jonathan {
+        grid-row: 2/3;
+    }
+
+    .Jeanette {
+        grid-row: 3/4;
+    }
+
+    .Patrick {
+        grid-row: 4/5;
+    }
+
+    .Kira {
+        grid-row: 5/6;
+    }
+
+    .Danielbackgrund {
+        right: 24px;
+    }
+}
